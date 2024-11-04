@@ -8,16 +8,17 @@
 body {
   background-color: black;
   color: white;
-  padding: 0 1% 1%;
   background-image: url(images/header_background2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* -------------navbar--------------- */
 nav {
-  padding: 3%;
+  padding: 1.5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 1.3rem;
   position: sticky;
@@ -44,7 +45,7 @@ nav {
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: red;
+  background-color: #fc00ff;
   position: absolute;
   bottom: -0.25rem;
   right: 0;
@@ -57,10 +58,9 @@ nav {
 }
 
 nav img {
-  width: 10%;
+  width: 200px;
 }
 
-/* From Uiverse.io by gharsh11032000 */
 .contact_button {
   width: 120px;
   height: 40px;
@@ -105,6 +105,8 @@ nav img {
   scale: 0.7;
 }
 
+/* -------------header--------------- */
+
 header {
   width: 100%;
   height: 100vh;
@@ -114,8 +116,80 @@ header {
 }
 
 .name_underline {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #fc00ff;
   font-size: 3.5rem;
 }
 
+/* -------------about me--------------- */
+.apropos_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(252,0,255,0.7) 100%);}
 
+.apropos_pic {
+  flex-basis: 35%;
+}
+
+.apropos_pic img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.apropos_details {
+  flex-basis: 60%;
+  background-color: black;
+  border-radius: 15px;
+  padding: 3%;
+}
+
+.apropos_details h1{
+  font-size: 3.3rem;
+  margin-bottom: 3%;
+}
+
+.apropos_tab_titles {
+  display: flex;
+  margin: 3% 0 5%;
+}
+
+.apropos_tab_links {
+  margin-right: 7%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.apropos_tab_links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #c413c7;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.apropos_tab_links.active_link::after {
+   width: 100%;
+}
+
+.apropos_tab_content ul li {
+  list-style: none;
+  margin: 3% 0;
+}
+
+.apropos_tab_content ul li span{
+  color: #c413c7;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.apropos_tab_content {
+  display: none;
+}
+
+.apropos_tab_content.active_tab {
+  display: block;
+}
