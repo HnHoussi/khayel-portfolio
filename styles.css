@@ -8,13 +8,13 @@
 body {
   background-color: black;
   color: white;
-  background-image: url(images/header_background2.jpg);
+  background-image: url(images/file.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* -------------navbar--------------- */
+/* -------------Navbar--------------- */
 nav {
   padding: 1.5%;
   display: flex;
@@ -105,7 +105,7 @@ nav img {
   scale: 0.7;
 }
 
-/* -------------header--------------- */
+/* -------------Header--------------- */
 
 header {
   width: 100%;
@@ -120,7 +120,7 @@ header {
   font-size: 3.5rem;
 }
 
-/* -------------about me--------------- */
+/* -------------About_me--------------- */
 .apropos_section {
   display: flex;
   justify-content: space-between;
@@ -128,7 +128,7 @@ header {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 30%,
-    rgba(252, 0, 255, 0.7) 100%
+    rgba(252, 0, 255, 0.6) 100%
   );
 }
 
@@ -149,7 +149,7 @@ header {
   padding: 2%;
 }
 
-.apropos_details h1 {
+.section_title {
   font-size: 3.3rem;
   margin-bottom: 3%;
 }
@@ -203,4 +203,78 @@ header {
 
 .apropos_tab_content.active_tab {
   display: block;
+}
+
+/* ----------Thesis_details--------------- */
+
+.thesis_details {
+  padding: 3%;
+  background-color: black;
+}
+
+
+.contact_section {
+  padding: 3%;
+  background-color: black;
+  display: flex;
+}
+
+.contact_info {
+  flex-basis: 35%;
+}
+
+.contact_info p {
+  flex-basis: 35%;
+  margin-top: 7%;
+}
+
+.contact_form {
+  flex-basis: 60%;
+}
+
+.Btn_LinkedIn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  background: #0274b3;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.Btn_LinkedIn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn_LinkedIn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn_LinkedIn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
 }

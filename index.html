@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <title>Portfolio de Khayel</title>
   </head>
   <body>
@@ -12,7 +14,7 @@
       <div class="nav_links">
         <a href="#" class="nav_link">Accueil</a>
         <a href="#" class="nav_link">A propos</a>
-        <a href="#" class="nav_link">Mon thèse en détail</a>
+        <a href="#" class="nav_link">Ma thèse en détail</a>
         <button class="nav_link contact_button">Contact</button>
       </div>
     </nav>
@@ -26,10 +28,10 @@
     </header>
     <section class="apropos_section">
       <div class="apropos_pic">
-        <img src="images/apropos_img.jpg" alt="Image de Khayel" />
+        <img src="images/aPropos.jpg" alt="Image de Khayel" />
       </div>
       <div class="apropos_details">
-        <h1>A propos</h1>
+        <h1 class="section_title">A propos</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
           repellendus corporis nulla cupiditate nobis voluptatem! Eveniet,
@@ -139,6 +141,56 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+    <section class="thesis_details">
+      <h1 class="section_title">Ma thèse en détail</h1>
+    </section>
+    <section class="contact_section">
+      <div class="contact_info">
+        <h1 class="section_title">Me contacter</h1>
+        <p><i class="fas fa-paper-plane"></i> khayelch@gmail.com</p>
+        <p>(+33) 6 22 72 87 09</p>
+        <p>Carquefou 44470 - Nantes</p>
+        <a
+          href="https://www.linkedin.com/in/khayel-chaabani-53b06819b/"
+          target="_blank"
+        >
+          <button class="Btn_LinkedIn">
+            <svg
+              viewBox="0 0 16 16"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="svgIcon"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+              ></path>
+            </svg>
+            <span class="text">LinkedIn</span>
+          </button>
+        </a>
+      </div>
+      <div class="contact_form">
+        <form class="form">
+          <div class="form-group">
+            <label for="email">Votre Email</label>
+            <input type="text" id="email" name="email" required="" />
+          </div>
+          <div class="form-group">
+            <label for="textarea">Votre message</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              rows="10"
+              cols="50"
+              required=""
+            >
+            </textarea>
+          </div>
+          <button class="form-submit-btn" type="submit">Envoyer</button>
+        </form>
       </div>
     </section>
   </body>
