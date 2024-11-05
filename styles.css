@@ -125,7 +125,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 3% 10%;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(252,0,255,0.7) 100%);}
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(252, 0, 255, 0.7) 100%
+  );
+}
 
 .apropos_pic {
   flex-basis: 35%;
@@ -137,13 +142,14 @@ header {
 }
 
 .apropos_details {
+  border: 2px solid #c413c7;
   flex-basis: 60%;
   background-color: black;
   border-radius: 15px;
-  padding: 3%;
+  padding: 2%;
 }
 
-.apropos_details h1{
+.apropos_details h1 {
   font-size: 3.3rem;
   margin-bottom: 3%;
 }
@@ -161,7 +167,7 @@ header {
 }
 
 .apropos_tab_links::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #c413c7;
@@ -172,15 +178,16 @@ header {
 }
 
 .apropos_tab_links.active_link::after {
-   width: 100%;
+  width: 100%;
 }
 
 .apropos_tab_content ul li {
   list-style: none;
   margin: 3% 0;
+  line-height: 1.5rem;
 }
 
-.apropos_tab_content ul li span{
+.apropos_tab_content ul li span {
   color: #c413c7;
   line-height: 2rem;
   font-size: 1.2rem;

@@ -9,4 +9,7 @@ const openTab = (tabName) => {
     for (let tabContent of tabContents) {
         tabContent.classList.remove("active_tab");
     }
+
+    event.currentTarget.classList.add("active_link")
+    document.getElementById(tabName).classList.add("active_tab")
 }
