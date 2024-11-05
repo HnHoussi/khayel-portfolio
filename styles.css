@@ -214,13 +214,14 @@ header {
 
 
 .contact_section {
-  padding: 3%;
+  padding: 0 15% 5%;
   background-color: black;
   display: flex;
 }
 
 .contact_info {
   flex-basis: 35%;
+  margin-right: 7%;
 }
 
 .contact_info p {
@@ -228,11 +229,18 @@ header {
   margin-top: 7%;
 }
 
+.contact_info p i{
+  color: #c413c7;
+  margin-right: 2%;
+  font-size: 1.2rem;
+}
+
 .contact_form {
   flex-basis: 60%;
 }
 
 .Btn_LinkedIn {
+  margin: 7% 0 0 10%;
   border: none;
   border-radius: 50%;
   width: 45px;
@@ -278,3 +286,104 @@ header {
   opacity: 0;
   transition-duration: 0.3s;
 }
+
+/* From Uiverse.io by gharsh11032000 */ 
+.contact_form {
+  width: 400px;
+  background: linear-gradient(#212121, #000000) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.contact_form button:active {
+  scale: 0.95;
+}
+
+.contact_form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact_form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact_form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #cfc5c5;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.contact_form .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.contact_form .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.contact_form .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.contact_form .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.contact_form .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.contact_form .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: center;
+  font-family: inherit;
+  color: #949393;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.contact_form .form-submit-btn:hover {
+  background-color: #744779;
+  color: white;
+}
+
+
+
