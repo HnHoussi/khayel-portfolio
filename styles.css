@@ -8,7 +8,7 @@
 body {
   background-color: black;
   color: white;
-  background-image: url(images/file.png);
+  background-image: url(images/backgroundKhayel.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +26,7 @@ nav {
   left: 0;
   right: 0;
   background-color: black;
+  z-index: 10;
 }
 
 .nav_links {
@@ -124,7 +125,7 @@ header {
 .apropos_section {
   display: flex;
   justify-content: space-between;
-  padding: 3% 10%;
+  padding: 3% 5%;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 30%,
@@ -143,7 +144,7 @@ header {
 
 .apropos_details {
   border: 2px solid #c413c7;
-  flex-basis: 60%;
+  flex-basis: 63%;
   background-color: black;
   border-radius: 15px;
   padding: 2%;
@@ -154,6 +155,11 @@ header {
   margin-bottom: 3%;
 }
 
+.aPropos_description {
+  text-align: justify;
+  padding: 0 3% 0 0;
+  line-height: 1.3rem;
+}
 .apropos_tab_titles {
   display: flex;
   margin: 3% 0 5%;
@@ -185,6 +191,10 @@ header {
   width: 100%;
 }
 
+.apropos_tab_content ul {
+  padding: 0 4% 0 1%;
+  text-align: justify;
+}
 .apropos_tab_content ul li {
   list-style: none;
   margin: 3% 0;
@@ -212,11 +222,51 @@ header {
   background-color: black;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 7% 5% 10%;
+}
+
+.card {
+  width: 30%;
+  height: 60vh;
+  overflow: hidden;
+  background-color: #212121;
+  border-radius: 10px;
+  border: #212121 0.2rem solid;
+  transition: all 0.4s ease-in;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.card:hover {
+  border: #c413c7 0.1em solid;
+  border-radius: 2.5rem 0;
+  box-shadow: none;
+}
+
+.card_title {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.card_content {
+  margin: 5%;
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* ----------Contact_Me--------------- */
 
 .contact_section {
   padding: 0 15% 5%;
   background-color: black;
   display: flex;
+  align-items: center;
 }
 
 .contact_info {
@@ -225,18 +275,13 @@ header {
 }
 
 .contact_info p {
-  flex-basis: 35%;
   margin-top: 7%;
 }
 
-.contact_info p i{
+.contact_info p i {
   color: #c413c7;
   margin-right: 2%;
   font-size: 1.2rem;
-}
-
-.contact_form {
-  flex-basis: 60%;
 }
 
 .Btn_LinkedIn {
@@ -287,11 +332,11 @@ header {
   transition-duration: 0.3s;
 }
 
-/* From Uiverse.io by gharsh11032000 */ 
 .contact_form {
+  flex-basis: 60%;
   width: 400px;
   background: linear-gradient(#212121, #000000) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 2rem;
   font-size: 1rem;
@@ -341,10 +386,11 @@ header {
   padding: 12px 16px;
   border-radius: 8px;
   color: #fff;
-  height: 96px;
+  height: 150px;
   border: 1px solid #414141;
   background-color: transparent;
   font-family: inherit;
+  font-size: 1rem;
 }
 
 .contact_form .form-group input::placeholder {
@@ -362,19 +408,15 @@ header {
 }
 
 .contact_form .form-submit-btn {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: center;
+  margin: 0 auto;
   font-family: inherit;
   color: #949393;
   font-weight: 600;
   width: 40%;
   background: #313131;
-  border: 1px solid #414141;
+  border: none;
   padding: 12px 16px;
   font-size: inherit;
-  gap: 8px;
   margin-top: 8px;
   cursor: pointer;
   border-radius: 6px;
@@ -385,5 +427,23 @@ header {
   color: white;
 }
 
+/* ----------Copyrights--------------- */
 
+.copyrights {
+  text-align: center;
+  background-color: black;
+  color: #cfc5c5;
+  padding: 0.3%;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
 
+.copyrights .icons {
+  color: #e81cff;
+  font-size: 1rem;
+  margin: 0 0.3%;
+}
+
+.copyrights a {
+  color: #cfc5c5;
+}

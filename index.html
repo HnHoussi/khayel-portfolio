@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav>
-      <img src="images/logo.png" alt="Bienvenue logo" />
+      <img src="images/logoBienvenue.png" alt="Bienvenue logo" />
       <div class="nav_links">
         <a href="#" class="nav_link">Accueil</a>
         <a href="#" class="nav_link">A propos</a>
@@ -28,6 +28,7 @@
       </h1>
       <h2>Doctorante à l'IRT Jules Verne</h2>
       <h3>PERFORM 2022</h3>
+      <img src="images/IRT-Jules-Verne-logo.png" alt="" />
     </header>
     <section class="apropos_section">
       <div class="apropos_pic">
@@ -35,11 +36,12 @@
       </div>
       <div class="apropos_details">
         <h1 class="section_title">A propos</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
-          repellendus corporis nulla cupiditate nobis voluptatem! Eveniet,
-          accusamus corporis nesciunt distinctio officia libero temporibus
-          impedit culpa asperiores maiores est laboriosam autem!
+        <p class="aPropos_description">
+          Je suis doctorant en génie mécanique spécialisé en matériaux, avec une
+          expérience en conception aéronautique chez Airbus. <br />
+          Avec un double diplôme de l’École des Arts et Métiers et des
+          compétences en CAO, simulation et programmation, je suis un ingénieur
+          orienté vers l'innovation, prêt à relever des défis techniques.
         </p>
         <div class="apropos_tab_titles">
           <button class="apropos_tab_links active_link" data-tab="formation">
@@ -59,18 +61,18 @@
           <ul>
             <li>
               <span>
-                Ecole Nationale Supérieure d'Arts et Métiers Angers - 2022 / 2025
+                Ecole Nationale Supérieure d'Arts et Métiers Angers - 2022 /
+                2025
               </span>
               <br />
               - Thèse en Mécanique et Matériaux
             </li>
             <li>
               <span>
-                Ecole Nationale Supérieure d'Arts et Métiers Metz - 2021 /
-                2022
+                Ecole Nationale Supérieure d'Arts et Métiers Metz - 2021 / 2022
               </span>
-              <br />- Double diplôme : Master de recherche en Ingénierie Mécanique,
-               Matériaux Structures et Procédés<br />
+              <br />- Double diplôme : Master de recherche en Ingénierie
+              Mécanique, Matériaux Structures et Procédés<br />
             </li>
             <li>
               <span>
@@ -194,11 +196,44 @@
     </section>
     <section class="thesis_details">
       <h1 class="section_title">Ma thèse en détail</h1>
+      <div class="cards">
+        <div class="card">
+          <h1 class="card_title">Titre et Résumé</h1>
+          <p class="card_content">
+            Maitrise de la géométrie finale des pièces aéronautiques de grandes
+            dimensions mises en forme par déformation puis usinées par une
+            approche hybride : Simulation - Mesure in process - Analyse de
+            données (IA)
+          </p>
+        </div>
+        <div class="card">
+          <h1 class="card_title">Objectifs</h1>
+          <p class="card_content">
+            Mon objectif principal est d'améliorer la précision de fabrication
+            des grandes pièces aéronautiques grâce à des méthodes novatrices. La
+            recherche vise à minimiser les écarts géométriques en optimisant les
+            procédés de déformation et d'usinage, afin de répondre aux exigences
+            strictes de l'industrie aéronautique en matière de qualité et
+            d'efficacité.
+          </p>
+        </div>
+        <div class="card">
+          <h1 class="card_title">Collaboration Industrielle</h1>
+          <p class="card_content">
+            Ce projet est réalisé en partenariat avec Airbus, site de Nantes,
+            offrant une perspective appliquée et pertinente dans le secteur
+            aéronautique. Cette collaboration permet de tester et d'affiner les
+            modèles dans un environnement industriel réel, rendant la recherche
+            directement applicable et alignée sur les besoins actuels de
+            l'industrie.
+          </p>
+        </div>
+      </div>
     </section>
     <section class="contact_section">
       <div class="contact_info">
         <h1 class="section_title">Me contacter</h1>
-        <p><i class="fas fa-paper-plane"></i> khayelch@gmail.com</p>
+        <p><i class="fas fa-paper-plane"></i> khayel.chaabani@ensam.eu</p>
         <p><i class="fas fa-phone-square-alt"></i> (+33) 6 22 72 87 09</p>
         <p><i class="fa-solid fa-location-dot"></i> Carquefou 44470 - Nantes</p>
         <a
@@ -235,13 +270,20 @@
               rows="10"
               cols="50"
               required=""
-            >
-            </textarea>
+            ></textarea>
           </div>
           <button class="form-submit-btn" type="submit">Envoyer</button>
         </form>
       </div>
     </section>
+    <footer class="copyrights">
+      <p>
+        Made with <i class="fa-solid fa-heart icons"></i> by Houcine HANNOUN
+      </p>
+      <a href="https://www.linkedin.com/in/houcine-hannoun/" target="_blank"
+        ><i class="fa-brands fa-linkedin icons"></i>LinkedIn</a
+      >
+    </footer>
   </body>
   <script src="index.js"></script>
 </html>
