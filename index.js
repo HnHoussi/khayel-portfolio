@@ -19,3 +19,7 @@ for (let tabLink of tabLinks) {
         openTab(this.getAttribute('data-tab'), this);
     });
 }
+
+function scrollToSection() {
+  document.getElementById("contact_section").scrollIntoView();
+}
