@@ -36,7 +36,7 @@ nav {
 }
 
 .nav_links {
-  width: 50%;
+  width: 70%;
   text-align: end;
 }
 
@@ -65,8 +65,8 @@ nav {
 }
 
 nav img {
-  width: 10%;
-  height: 5%;
+  width: 150px;
+  height: 40px;
 }
 
 .contact_button {
@@ -238,7 +238,6 @@ header {
 .card {
   width: 30%;
   height: 60vh;
-  overflow: hidden;
   background-color: #212121;
   transition: all 0.4s ease-in;
   background: linear-gradient(#212121, #212121) padding-box,
@@ -443,7 +442,8 @@ header {
   background-color: transparent;
 }
 
-.contact_form .form-group textarea:focus, .contact_form .form-group input:focus {
+.contact_form .form-group textarea:focus,
+.contact_form .form-group input:focus {
   outline: none;
   border-color: #e81cff;
 }
@@ -472,4 +472,24 @@ header {
 
 .copyrights a {
   color: #cfc5c5;
+}
+
+@media only screen and (max-width: 1300px) {
+  .card {
+    overflow-y: auto;
+  }
+
+  .card::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+
+  .card::-webkit-scrollbar-thumb {
+    background: #e81cff;
+    border-radius: 5px;
+  }
 }
