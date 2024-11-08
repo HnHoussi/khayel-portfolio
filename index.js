@@ -15,11 +15,19 @@ const openTab = (tabName, clickedTab) => {
 };
 
 for (let tabLink of tabLinks) {
-    tabLink.addEventListener('click', function () {
-        openTab(this.getAttribute('data-tab'), this);
-    });
+  tabLink.addEventListener("click", function () {
+    openTab(this.getAttribute("data-tab"), this);
+  });
 }
 
 function scrollToSection() {
   document.getElementById("contact_section").scrollIntoView();
 }
+
+document
+  .getElementById("download-CV-btn")
+  .addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "res/CV_Khayel_CHAABANI.pdf"; // Replace with the path to your CV
+    link.click();
+  });

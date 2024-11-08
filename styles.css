@@ -9,10 +9,15 @@
 body {
   background-color: black;
   color: white;
-  background-image: url(images/backgroundKhayel.png);
+  background-image: url(res/backgroundKhayel.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.section_title {
+  font-size: 3.3rem;
+  margin-bottom: 3%;
 }
 
 /* -------------Navbar--------------- */
@@ -124,7 +129,8 @@ header {
   font-size: 3.5rem;
 }
 
-/* -------------About_me--------------- */
+/* -------------A_propos--------------- */
+
 .apropos_section {
   scroll-margin-top: 3rem;
   display: flex;
@@ -154,16 +160,12 @@ header {
   padding: 2%;
 }
 
-.section_title {
-  font-size: 3.3rem;
-  margin-bottom: 3%;
-}
-
 .aPropos_description {
   text-align: justify;
-  padding: 0 3% 0 0;
-  line-height: 1.3rem;
+  padding-right: 3%;
+  line-height: 1.4rem;
 }
+
 .apropos_tab_titles {
   display: flex;
   margin: 3% 0 5%;
@@ -195,6 +197,14 @@ header {
   width: 100%;
 }
 
+.apropos_tab_content {
+  display: none;
+}
+
+.apropos_tab_content.active_tab {
+  display: block;
+}
+
 .apropos_tab_content ul {
   padding: 0 4% 0 1%;
   text-align: justify;
@@ -211,14 +221,6 @@ header {
   font-size: 1.2rem;
 }
 
-.apropos_tab_content {
-  display: none;
-}
-
-.apropos_tab_content.active_tab {
-  display: block;
-}
-
 /* ----------Thesis_details--------------- */
 
 .thesis_details {
@@ -230,7 +232,7 @@ header {
 .cards {
   display: flex;
   justify-content: space-between;
-  margin: 7% 5% 10%;
+  margin: 5%;
 }
 
 .card {
@@ -238,13 +240,11 @@ header {
   height: 60vh;
   overflow: hidden;
   background-color: #212121;
-  border-radius: 10px;
-  border: #212121 0.2rem solid;
   transition: all 0.4s ease-in;
   background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 .card:hover {
@@ -255,11 +255,11 @@ header {
 
 .card_title {
   text-align: center;
-  margin: 5% 0;
+  margin: 5%;
 }
 
 .card_content {
-  margin: 5%;
+  padding: 0 7%;
   line-height: 2rem;
   font-size: 1rem;
   text-align: justify;
@@ -269,24 +269,18 @@ header {
 
 .contact_section {
   padding: 7% 15%;
-  background-color: #212121;
+  background-color: #111010;
   display: flex;
   align-items: center;
 }
 
 .contact_info {
   flex-basis: 35%;
-  margin-right: 7%;
+  margin-right: 10%;
 }
 
 .contact_info p {
-  margin-top: 7%;
-}
-
-.contact_info p i {
-  color: #c413c7;
-  margin-right: 2%;
-  font-size: 1.2rem;
+  margin: 7% auto;
 }
 
 .Btn_LinkedIn {
@@ -294,7 +288,7 @@ header {
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  margin: 7% 0 0 10%;
+  margin: 7% 0 0 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -337,35 +331,98 @@ header {
   transition-duration: 0.3s;
 }
 
+.form-buttons {
+  display: flex;
+  align-items: center;
+  margin: 7% 0;
+  font-size: 1rem;
+  padding: 12px 20px;
+  color: white;
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.form-buttons svg {
+  margin-right: 8px;
+  width: 25px;
+}
+
+.form-buttons:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.form-buttons:active {
+  box-shadow: 0 0.3em 1em -0.5em #3b82f6;
+  scale: 0.95;
+}
+
+.form-buttons::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.form-buttons::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.form-buttons:hover::before,
+.form-buttons:hover::after {
+  height: 60%;
+}
+
+.form-buttons:hover::before {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  transform: translate(5px, -15px) rotate(45deg);
+}
+
+.form-buttons:hover::after {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transform: translate(-5px, 15px) rotate(45deg);
+}
+
 .contact_form {
   flex-basis: 60%;
-  width: 400px;
+  width: 100%;
   background: linear-gradient(#212121, #000000) padding-box,
     linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
   padding: 2rem;
   font-size: 1rem;
-  font-family: inherit;
-  color: white;
-  display: flex;
-  flex-direction: column;
   border-radius: 15px;
-}
-
-.contact_form button:active {
-  scale: 0.95;
 }
 
 .contact_form .form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.contact_form .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
 }
 
 .contact_form .form-group label {
@@ -376,74 +433,38 @@ header {
   font-size: 1rem;
 }
 
+.contact_form .form-group textarea,
 .contact_form .form-group input {
   width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
   color: #fff;
-  font-family: inherit;
-  background-color: transparent;
-  border: 1px solid #414141;
-}
-
-.contact_form .form-group textarea {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  color: #fff;
-  height: 150px;
   border: 1px solid #414141;
   background-color: transparent;
-  font-family: inherit;
-  font-size: 1rem;
 }
 
-.contact_form .form-group input::placeholder {
-  opacity: 0.5;
-}
-
-.contact_form .form-group input:focus {
-  outline: none;
-  border-color: #e81cff;
-}
-
-.contact_form .form-group textarea:focus {
+.contact_form .form-group textarea:focus, .contact_form .form-group input:focus {
   outline: none;
   border-color: #e81cff;
 }
 
 .contact_form .form-submit-btn {
   margin: 0 auto;
-  font-family: inherit;
-  color: #949393;
-  font-weight: 600;
-  width: 40%;
-  background: #313131;
-  border: none;
-  padding: 12px 16px;
-  font-size: inherit;
-  margin-top: 8px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.contact_form .form-submit-btn:hover {
-  background-color: #744779;
-  color: white;
 }
 
 /* ----------Copyrights--------------- */
 
 .copyrights {
+  width: 100%;
   text-align: center;
-  background-color: #212121;
+  background-color: #111010;
   color: #cfc5c5;
-  padding: 0.3%;
+  padding-bottom: 0.3%;
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
 
-.copyrights .icons {
+.icons {
   color: #e81cff;
   font-size: 1rem;
   margin: 0 0.3%;
@@ -452,4 +473,3 @@ header {
 .copyrights a {
   color: #cfc5c5;
 }
-

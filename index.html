@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav>
-      <img src="images/logoBienvenue.png" alt="Bienvenue logo" />
+      <img src="res/logoBienvenue.png" alt="Bienvenue logo" />
       <div class="nav_links">
         <a href="#accueil" class="nav_link">Accueil</a>
         <a href="#apropos_section" class="nav_link">A propos</a>
@@ -30,11 +30,11 @@
       </h1>
       <h2>Doctorante à l'IRT Jules Verne</h2>
       <h3>PERFORM 2022</h3>
-      <img src="images/IRT-Jules-Verne-logo.png" alt="" />
+      <img src="res/IRT-Jules-Verne-logo.png" alt="Logo IRT-Jules-Verne" />
     </header>
     <section class="apropos_section" id="apropos_section">
       <div class="apropos_pic">
-        <img src="images/aPropos.jpg" alt="Image de Khayel" />
+        <img src="res/aPropos.jpg" alt="Image de Khayel" />
       </div>
       <div class="apropos_details">
         <h1 class="section_title">A propos</h1>
@@ -236,9 +236,9 @@
     <section class="contact_section" id="contact_section">
       <div class="contact_info">
         <h1 class="section_title">Me contacter</h1>
-        <p><i class="fas fa-paper-plane"></i> khayel.chaabani@ensam.eu</p>
-        <p><i class="fas fa-phone-square-alt"></i> (+33) 6 22 72 87 09</p>
-        <p><i class="fa-solid fa-location-dot"></i> Carquefou 44470 - Nantes</p>
+        <p><i class="fas fa-paper-plane icons"></i> khayel.chaabani@ensam.eu</p>
+        <p><i class="fas fa-phone-square-alt icons"></i> (+33) 6 22 72 87 09</p>
+        <p><i class="fa-solid fa-location-dot icons"></i> Carquefou 44470 - Nantes</p>
         <a
           href="https://www.linkedin.com/in/khayel-chaabani-53b06819b/"
           target="_blank"
@@ -258,30 +258,46 @@
             <span class="text">LinkedIn</span>
           </button>
         </a>
+        <button class="form-buttons" id="download-CV-btn">
+          <svg
+            viewBox="0 0 640 512"
+            width="20"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="white"
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+            ></path>
+          </svg>
+          <span>Telecharger mon CV</span>
+        </button>
       </div>
       <div class="contact_form">
         <form class="form">
           <div class="form-group">
             <label for="email">Votre Email</label>
-            <input type="text" id="email" name="email" required="" />
+            <input type="text" id="email" name="Email" required="" />
           </div>
           <div class="form-group">
             <label for="textarea">Votre message</label>
             <textarea
-              name="textarea"
+              name="Message"
               id="textarea"
               rows="10"
               cols="50"
               required=""
             ></textarea>
           </div>
-          <button class="form-submit-btn" type="submit">Envoyer</button>
+          <button class="form-buttons form-submit-btn" type="submit">
+            Envoyer
+          </button>
         </form>
       </div>
     </section>
     <footer class="copyrights">
       <p>
-        Made with <i class="fa-solid fa-heart icons"></i> by Houcine HANNOUN
+        Copyrights © Made with <i class="fa-solid fa-heart icons"></i> by Houcine HANNOUN.
       </p>
       <a href="https://www.linkedin.com/in/houcine-hannoun/" target="_blank"
         ><i class="fa-brands fa-linkedin icons"></i>LinkedIn</a
